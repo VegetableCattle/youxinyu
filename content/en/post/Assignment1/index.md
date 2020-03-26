@@ -234,7 +234,7 @@ plt.show()
 ```python
 for degree in range(10):
     poly, model = polynomial(degree)
-    getError(degree, model)
+    getTraninErrorAndTestError(degree, model)
 x_plot = np.linspace(0, 9, 10)
 plt.ylim(0 ,1)
 plt.xlim(-1,10)
