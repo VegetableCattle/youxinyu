@@ -1,3 +1,19 @@
+---
+title: Data Mining Assignment 02 - kNN
+subtitle: The goal of this assignment is to implement kNN algorithm by using Jupyter notebook and [IRIS dataset](https://archive.ics.uci.edu/ml/datasets/Iris ).[Git](https://github.com/VegetableCattle/youxinyu/blob/master/content/en/post/Assignment2/index.ipynb)
+summary: The goal of this assignment is to implement kNN algorithm by using Jupyter notebook and [IRIS dataset](https://archive.ics.uci.edu/ml/datasets/Iris ).
+date: "2020-04-01T00:00:00Z"
+comments: false
+featured: false
+draft: false
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder. 
+image:
+  caption: ""
+  focal_point: ""
+  
+---
 ```python
 import numpy as np
 from collections import Counter #Just use Counter to count number
