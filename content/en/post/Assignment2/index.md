@@ -1,7 +1,7 @@
 ---
 title: kNN
 subtitle: The content of this blog is to implement kNN algorithm by using Jupyter notebook and [IRIS dataset](https://archive.ics.uci.edu/ml/datasets/Iris ).[Git](https://github.com/VegetableCattle/youxinyu/tree/master/static/files/li_02.ipynb).[Download file](https://yongli.netlify.com/files/li_02.ipynb)
-summary: The content of this blog is to implement kNN algorithm by using Jupyter notebook and [IRIS dataset]/files/hengchao_02.ipynb(https://archive.ics.uci.edu/ml/datasets/Iris ).
+summary: The content of this blog is to implement kNN algorithm by using Jupyter notebook and [IRIS dataset](https://archive.ics.uci.edu/ml/datasets/Iris ).
 date: "2020-04-01T00:00:00Z"
 comments: false
 featured: false
