@@ -1,3 +1,19 @@
+---
+title: Data Mining Assignment 03 - NBC
+subtitle: The content of this blog is to implement Naive Bayes Classifier algorithm by using Jupyter notebook and [Large Movie Review dataset](http://ai.stanford.edu/~amaas/data/sentiment/).[Git](https://github.com/VegetableCattle/youxinyu/tree/master/static/files/li_03.ipynb).[Download file](https://yongli.netlify.com/files/li_03.ipynb)
+summary: The content of this blog is to implement Naive Bayes Classifier algorithm by using Jupyter notebook and [Large Movie Review dataset](http://ai.stanford.edu/~amaas/data/sentiment/).
+date: "2020-04-17T00:00:00Z"
+comments: false
+featured: false
+draft: false
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder. 
+image:
+  caption: ""
+  focal_point: ""
+  
+---
 ```python
 import os
 import numpy as np
