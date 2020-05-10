@@ -25,11 +25,11 @@ The Bayesian method is a method with a long history and a lot of theoretical fou
 
 ### 1.2 Bayesian formula
 
-####  Joint probability formula: $$P(Y,X) = P(Y|X)P(X)=P(X|Y)P(Y) $$
+####  Joint probability formula: $$ P(Y,X) = P(Y|X)P(X)=P(X|Y)P(Y) $$
 
 Among them, $$P(Y) $$ is called the prior probability, $$P(Y∣X)$$ is called the posterior probability, and $$P(Y, X)$$ is called the joint probability. This way we can derive the Bayesian formula.
 
-#### Bayesian formula: $$P(Y|X)=\frac{P(X|Y)P(Y)}{P(X)} $$
+#### Bayesian formula: $$ P(Y|X)=\frac{P(X|Y)P(Y)}{P(X)} $$
 
 ### 1.3 Naive Bayes Algorithm
 
