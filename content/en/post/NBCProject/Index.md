@@ -3,6 +3,7 @@ title: Term Project
 subtitle: Use the [board game geek review data](https://www.kaggle.com/jvanelteren/boardgamegeek-reviews) to design an algorithm model that can predict the rating for the given  review.[Algorithm Git](https://github.com/VegetableCattle/youxinyu/tree/master/static/files/NBCproject.ipynb).[Download Algorithm file](https://yongli.netlify.com/files/NBCproject.ipynb). And then using this model to develop a predictor of reviews website. [Website Link](https://flask-rating-prediction.herokuapp.com/predicted). [Website Git](https://github.com/VegetableCattle/predictor-of-reviews)
 summary: Use the [board game geek review data](https://www.kaggle.com/jvanelteren/boardgamegeek-reviews) to design an algorithm model that can predict the rating for the given  review.[Algorithm Git](https://github.com/VegetableCattle/youxinyu/tree/master/static/files/NBCproject.ipynb).[Download Algorithm file](https://yongli.netlify.com/files/NBCproject.ipynb). And then using this model to develop a predictor of reviews website. [Website Link](https://flask-rating-prediction.herokuapp.com/predicted). [Website Github](https://github.com/VegetableCattle/predictor-of-reviews)
 date: "2020-05-09T00:00:00Z"
+math : true
 comments: false
 featured: false
 draft: false
