@@ -25,43 +25,43 @@ The Bayesian method is a method with a long history and a lot of theoretical fou
 
 ### 1.2 Bayesian formula
 
-####  Joint probability formula: $P(Y,X) = P(Y|X)P(X)=P(X|Y)P(Y) $
+####  Joint probability formula: $$P(Y,X) = P(Y|X)P(X)=P(X|Y)P(Y) $$
 
-Among them, $P(Y) $ is called the prior probability, $P(Y∣X)$ is called the posterior probability, and $P(Y, X)$ is called the joint probability. This way we can derive the Bayesian formula.
+Among them, $$P(Y) $$ is called the prior probability, $$P(Y∣X)$$ is called the posterior probability, and $$P(Y, X)$$ is called the joint probability. This way we can derive the Bayesian formula.
 
-#### Bayesian formula: $P(Y|X)=\frac{P(X|Y)P(Y)}{P(X)} $
+#### Bayesian formula: $$P(Y|X)=\frac{P(X|Y)P(Y)}{P(X)} $$
 
 ### 1.3 Naive Bayes Algorithm
 
 The probability model classifier is a conditional probability model:
 
-$p(C|F_1,…,F_n) $
+$$p(C|F_1,…,F_n) $$
 
 The independent variable C has several categories and the conditions depend on several feature variables, but the problem is that if the dimension of the number of features n is large or each feature can take a large number of values, it is not realistic to list the probability table based on the probability model. So we modified this model to make it feasible. According to the Bayesian formula:
 
-$p(C│F_1,…,F_n )=\frac{p(C)*p(F_1,…,F_n |C)}{p(F_1,…,F_n)} $
+$$p(C│F_1,…,F_n )=\frac{p(C)*p(F_1,…,F_n |C)}{p(F_1,…,F_n)} $$
 
 The denominator does not depend on C, and the value of the feature is also given, so the denominator can be considered a constant. The molecules are then equivalent to a joint distribution model:
 
-$p(C|F_1,…,F_n) $
+$$p(C|F_1,…,F_n) $$
 
-$∝p(C)*p(F_1,…,F_n│C) $
+$$∝p(C)*p(F_1,…,F_n│C) $$
 
-$∝p(C)*p(F_1│C)*p(F_2,…,F_n│C,F_1 ) $
+$$∝p(C)*p(F_1│C)*p(F_2,…,F_n│C,F_1 ) $$
 
-$∝p(C)*p(F_1│C)*p(F_2│C,F_1 )p(F_3│C,F_1,F_2 )…p(F_n│C,F_1,F_2…F_(n-1) )$
+$$∝p(C)*p(F_1│C)*p(F_2│C,F_1 )p(F_3│C,F_1,F_2 )…p(F_n│C,F_1,F_2…F_(n-1) )$$
 
 Assuming that each feature is independent of other features, that is, the features are independent of each other, there is:
 
-$p(F_i│C,F_j )=p(F_i│C) $
+$$p(F_i│C,F_j )=p(F_i│C) $$
 
 This means that the conditional distribution of the variable C can be expressed as:
 
-$p(C│F_1,…,F_n )=\frac{1}{Z} p(C)*∏_i^np(F_i│C)$
+$$p(C│F_1,…,F_n )=\frac{1}{Z} p(C)*∏_i^np(F_i│C)$$
 
 The corresponding classifier is the formula defined as follows:
 
-$classify(f_1,…,f_n )=argmax p(C=c)∏_i^np(F_i=f_i |C=c) $
+$$classify(f_1,…,f_n )=argmax p(C=c)∏_i^np(F_i=f_i |C=c) $$
 
 In this model, I use the ratings as the class, the comments as object, the word of comments as feature.
 
@@ -197,36 +197,36 @@ I use the data structure like: word:\[The number of occurrences in rating = 1,Th
 
 ### 3.5 Set the minimum threshold for the number of occurrences of words
 
-Set the minimum threshold for the number of occurrences of words to eliminate the influence of rare words. After many experiments, the threshold value set as len (train) * 0.00002.
+Set the minimum threshold for the number of occurrences of words to eliminate the influence of rare words. After many experiments, the threshold value set as $$len (train) * 0.00002$$ .
 
 ### 3.6 Handling repeated words using a mixed model
 
 #### 3.6.1 Polynomial model
 If we consider the situation of repeated words, that is to say, the repeated words are regarded as their occurrence multiple times, and are directly derived according to the conditional independent assumption, there are:
 
-$P(“good”,“good”,“nice”,“game”∣c)=P(“good”∣c)P(“good”∣c)P(“nice”∣S)P(“game”∣c) $
+$$P(“good”,“good”,“nice”,“game”∣c)=P(“good”∣c)P(“good”∣c)P(“nice”∣S)P(“game”∣c) $$
 
-In the statistical calculation of $P("good"|c)$, the repeated words in each counted spam sample are counted multiple times.
+In the statistical calculation of $$P("good"|c)$$, the repeated words in each counted spam sample are counted multiple times.
 
-$P("good"|c)=\frac{The total number of occurrences of "good" in each rating = c comment}{
-The sum of the number of occurrences of all words (counting the number of repetitions) in each comment with ratings = c}$
+$$P("good"|c)=\frac{The total number of occurrences of "good" in each rating = c comment}{
+The sum of the number of occurrences of all words (counting the number of repetitions) in each comment with ratings = c}$$
 
 #### 3.6.2 Bernoulli model
 
 This more simplified method is to treat repeated words as if they only occur once.
 
-$P(“good”,“good”,“nice”,“game”∣c)=P(“good”∣c)P(“nice”∣S)P(“game”∣c) $
+$$P(“good”,“good”,“nice”,“game”∣c)=P(“good”∣c)P(“nice”∣S)P(“game”∣c) $$
 
-Statistical calculation $P("Word"∣c)$:
+Statistical calculation $$P("Word"∣c)$$:
 
-$P("good"|c)=\frac{The number of rating = c comment which occurrences "good"}{
-The sum of the number of occurrences of all words (Only count once) in each comment with ratings = c}$
+$$P("good"|c)=\frac{The number of rating = c comment which occurrences "good"}{
+The sum of the number of occurrences of all words (Only count once) in each comment with ratings = c}$$
 
 Such a model is called a Bernoulli model (also called a binomial independent model). This way is more simplified and convenient. Of course, it loses the word frequency information, so the effect may be worse.
 
 #### 3.6.3 Mixed model
 
-This method does not consider the number of occurrences of repeated words when calculating the probability of a sentence, but considers the number of occurrences of repeated words when calculating the probability P ("word" | c) of a word statistically. model.
+This method does not consider the number of occurrences of repeated words when calculating the probability of a sentence, but considers the number of occurrences of repeated words when calculating the probability $$P ("word" | c)$$ of a word statistically. model.
 
 
 ```python
@@ -312,19 +312,19 @@ print(word_num)
 Smoothing techniques all give words that do not appear in the training set an estimated probability, and accordingly reduce the probability of other words that have already appeared. The smoothing technology is a real demand that arises because the data set is too small. If the data set is large enough, the effect of the smoothing technique on the results will become smaller. But because 1rating has a small number of comments, it makes sense to use smoothing techniques here.
 
 
-For the Bernoulli model, a smoothing algorithm for $P("good"|c)$ is:
+For the Bernoulli model, a smoothing algorithm for $$P("good"|c)$$ is:
 
-$P("good"|c)=\frac{The number of rating = c comment which occurrences "good" + lambda}{
-The sum of the number of occurrences of all words (Only count once) in each comment with ratings = c + lambda * the number of ratings}$
-
-
-For the Polynomial model, a smoothing algorithm for $P("good"|c)$ is:
-
-$P("good"|c)=\frac{The total number of occurrences of "good" in each rating = c comment + lambda}{
-The sum of the number of occurrences of all words (counting the number of repetitions) in each comment with ratings = c + lambda * The number of words in the vocabulary counted}$
+$$P("good"|c)=\frac{The number of rating = c comment which occurrences "good" + lambda}{
+The sum of the number of occurrences of all words (Only count once) in each comment with ratings = c + lambda * the number of ratings}$$
 
 
-$ 0<lambda<=1$
+For the Polynomial model, a smoothing algorithm for $$P("good"|c)$$ is:
+
+$$P("good"|c)=\frac{The total number of occurrences of "good" in each rating = c comment + lambda}{
+The sum of the number of occurrences of all words (counting the number of repetitions) in each comment with ratings = c + lambda * The number of words in the vocabulary counted}$$
+
+
+$$ 0<lambda<=1$$
 
 
 ```python
