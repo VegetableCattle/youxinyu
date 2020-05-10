@@ -463,7 +463,7 @@ b.Select Mixed model(Combined the Polynomial model and Bernoulli model) to poste
 
 c.Map ratings to 1-5
 
-### 8.Referrences
+### 8.References
 
 Professor Mr. Park's data mining Naïve Bayes lecture.
 
