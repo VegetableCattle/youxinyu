@@ -1,3 +1,20 @@
+---
+title: Term Project
+subtitle: Goal: Use the [board game geek review data](https://www.kaggle.com/jvanelteren/boardgamegeek-reviews) to design an algorithm model that can predict the rating for the given  review.[Algorithm Git](https://github.com/VegetableCattle/youxinyu/tree/master/static/files/NBCproject.ipynb).[Download Algorithm file](https://yongli.netlify.com/files/NBCproject.ipynb). And then using this model to develop a predictor of reviews website. [Website Link](https://flask-rating-prediction.herokuapp.com/predicted). [Website Git](https://github.com/VegetableCattle/predictor-of-reviews)
+summary: Goal: Use the [board game geek review data](https://www.kaggle.com/jvanelteren/boardgamegeek-reviews) to design an algorithm model that can predict the rating for the given  review.[Algorithm Git](https://github.com/VegetableCattle/youxinyu/tree/master/static/files/NBCproject.ipynb).[Download Algorithm file](https://yongli.netlify.com/files/NBCproject.ipynb). And then using this model to develop a predictor of reviews website. [Website Link](https://flask-rating-prediction.herokuapp.com/predicted). [Website Github](https://github.com/VegetableCattle/predictor-of-reviews)
+date: "2020-04-17T00:00:00Z"
+comments: false
+featured: false
+draft: false
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder. 
+image:
+  caption: ""
+  focal_point: ""
+  
+---
+
 ## Goal: Use the [board game geek review data](https://www.kaggle.com/jvanelteren/boardgamegeek-reviews) to design an algorithm model that can predict the rating for the given  review. And then using this model to develop a predictor of reviews website. [Website Link](https://flask-rating-prediction.herokuapp.com/predicted). [Website Github](https://github.com/VegetableCattle/predictor-of-reviews)
 
 ## Blog content: Introduction the implementation of Naive Bayse Classifier without using algorithm library.
