@@ -1,5 +1,5 @@
 ---
-title: Data Mining Assignment 03 - NBC
+title: Sentiment analysis based on NBC
 subtitle: The content of this blog is to implement Naive Bayes Classifier algorithm by using Jupyter notebook and [Large Movie Review dataset](http://ai.stanford.edu/~amaas/data/sentiment/).[Git](https://github.com/VegetableCattle/youxinyu/tree/master/static/files/li_03.ipynb).[Download file](https://yongli.netlify.com/files/li_03.ipynb)
 summary: The content of this blog is to implement Naive Bayes Classifier algorithm by using Jupyter notebook and [Large Movie Review dataset](http://ai.stanford.edu/~amaas/data/sentiment/).
 date: "2020-04-17T00:00:00Z"
