@@ -23,25 +23,12 @@ date_format = "Jan 2006"
   company_url = "https://www.qq.com/"
   location = "Beijing, China"
   date_start = "2021-01-04"
-  #date_end = "2021-01-19"
+  date_end = "2021-06-30"
   description = """
   
   - PCG engineering performance. 
   """
-
-[[experience]]
-  title = "DeeCamp artificial intelligence summer camp 2019"
-  company = "Sinovation Ventures"
-  company_url = "https://deecamp.chuangxin.com/2019"
-  location = "Beijing, China"
-  date_start = "2019-07-19"
-  date_end = "2019-08-17"
-  description = """
-  Design and develop deep learning courses to solve practical problems
   
-  - The DeeCamp training camp aims to improve the practical case experience of university AI talents in industry applications, and at the same time promote the in-depth integration of production, education and research. 
-  """
-
 [[experience]]
   title = "Algorithm internship
   company = "Yonyou Software Co., Ltd."
