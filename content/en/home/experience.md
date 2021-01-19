@@ -22,8 +22,8 @@ date_format = "Jan 2006"
   company = "Tencent"
   company_url = "https://www.qq.com/"
   location = "Beijing, China"
-  date_start = "2021-01"
-  date_end = "2021-06"
+  date_start = "2021-01-04"
+  date_end = "2021-06-30"
   description = """
   
   - PCG engineering performance. 
