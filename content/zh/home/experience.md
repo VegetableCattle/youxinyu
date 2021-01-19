@@ -18,6 +18,16 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
+  title = "后端开发实习生"
+  company = "腾讯"
+  company_url = "https://www.qq.com/"
+  location = "北京"
+  date_start = "2021-01"
+  date_end = "2021-06"
+  description = """
+  - PCG engineering performance
+  """
+[[experience]]
   title = "DeeCamp人工智能19年夏令营"
   company = "创新工厂"
   company_url = "https://deecamp.chuangxin.com/2019"
