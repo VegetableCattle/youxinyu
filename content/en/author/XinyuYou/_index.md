@@ -83,6 +83,6 @@ user_groups = ["Researchers", "Visitors"]
 
 +++
 
-Li Yong is currently studying for a master's degree in computer science at the University of Texas at Arlington. He is a software engineer and a growing machine learning engineer. He has a strong interest in artificial intelligence and software development. He has extensive experience in software back-end development and internship experience in NLP algorithms and machine learning. He participated in the DeeCamp artificial intelligence summer camp and participated in the development of computer vision related projects. His motto in life is: Stay hungry, stay foolish.
+Li Yong is currently studying for a master's degree in software engineering at Beijing University of Posts and Telecommunications,and will graduate in 2022. He is a software engineer and a growing machine learning engineer. He has a strong interest in artificial intelligence and software development. He has extensive experience in software back-end development and internship experience in NLP algorithms and machine learning. He participated in the DeeCamp artificial intelligence summer camp and participated in the development of computer vision related projects. His motto in life is: Stay hungry, stay foolish.
 
 ---
