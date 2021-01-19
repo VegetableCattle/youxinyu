@@ -23,8 +23,9 @@ date_format = "Jan 2006"
   company_url = "https://www.qq.com/"
   location = "Beijing, China"
   date_start = "2021-01-04"
-  date_end = "2021-01-19"
+  #date_end = "2021-01-19"
   description = """
+  
   - PCG engineering performance. 
   """
 
@@ -54,7 +55,7 @@ date_format = "Jan 2006"
   """
 
 [[experience]]
-  title = "Back-end development internship"
+  title = "Java development internship"
   company = "TAL Education Group"
   company_url = "https://www.100tal.com/"
   location = "Beijing, China"
