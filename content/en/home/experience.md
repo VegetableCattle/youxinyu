@@ -18,6 +18,18 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
+  title = "Back-end development internship"
+  company = "Tencent"
+  company_url = "https://www.qq.com/"
+  location = "Beijing, China"
+  date_start = "2021-01"
+  date_end = "2021-06"
+  description = """
+  
+  - PCG engineering performance. 
+  """
+
+[[experience]]
   title = "DeeCamp artificial intelligence summer camp 2019"
   company = "Sinovation Ventures"
   company_url = "https://deecamp.chuangxin.com/2019"
@@ -31,7 +43,7 @@ date_format = "Jan 2006"
   """
 
 [[experience]]
-  title = "Algorithm Engineer Intern"
+  title = "Algorithm internship
   company = "Yonyou Software Co., Ltd."
   company_url = "https://www.yonyou.com/"
   location = "Beijing, China"
@@ -43,7 +55,7 @@ date_format = "Jan 2006"
   """
 
 [[experience]]
-  title = "Back End Developer Intern"
+  title = "Back-end development internship"
   company = "TAL Education Group"
   company_url = "https://www.100tal.com/"
   location = "Beijing, China"
@@ -55,7 +67,7 @@ date_format = "Jan 2006"
   """
 
 [[experience]]
-  title = "Java Software Engineer Intern"
+  title = "Java Software development internship"
   company = "Weidian Beijing"
   company_url = "https://www.weidian.com/"
   location = "Beijing, China"
