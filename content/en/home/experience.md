@@ -25,7 +25,6 @@ date_format = "Jan 2006"
   date_start = "2021-01-04"
   date_end = "2021-06-30"
   description = """
-  
   - PCG engineering performance. 
   """
 
